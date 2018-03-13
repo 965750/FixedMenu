@@ -1,0 +1,122 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.barContAll {
+    width: 150px;
+    height: 250px;
+    position: fixed;
+    top: 10%;
+    left: 0px;
+    transition: all .3s;
+    .singleBtnCont {
+        width: 150px;
+        display: flex;
+        position: absolute;
+        .leftPanelCont{
+            width: 20%;
+            height: 100vh;
+            position: fixed;  
+            top: 0px;
+            left: -20%;
+            transition: all .3s;
+        }
+        .leftPanelActive{
+            left: 0%;    
+        }
+        .barContLeft {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 54px;
+            transition: all .1s;
+            .iconFA {
+                color: white;
+                font-size: 20px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            .ys{
+                padding-right: 3px;
+            }
+        }
+        .barContRight {
+            background: #4c4c4c;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            span {
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+    }
+    .menu {
+        top: 0px;
+        .barContLeft {
+            background: #1fa67a;
+            &:hover {
+                background: lighten(#1fa67a, 5%);
+            }
+        }
+        .leftPanelCont{
+            background: #1fa67a;
+        }
+    }
+    .fav {
+        top: 50px;
+        .barContLeft {
+            background: #c02b74;
+            &:hover {
+                background: lighten(#c02b74, 5%);
+            }
+        }
+        .leftPanelCont{
+            background: #c02b74;
+        }
+    }
+    .subs {
+        top: 100px;
+        .barContLeft {
+            background: #2bb1c0;
+            &:hover {
+                background: lighten(#2bb1c0, 5%);
+            }
+        }
+        .leftPanelCont{
+            background: #2bb1c0;
+        }
+    }
+    .insta {
+        top: 150px;
+        .barContLeft {
+            background: #c4bf0d;
+            &:hover {
+                background: lighten(#c4bf0d, 5%);
+            }
+        }
+        .leftPanelCont{
+            background: #c4bf0d;
+        }
+    }
+    .vid {
+        top: 200px;
+        .barContLeft {
+            background: #000;
+            &:hover {
+                background: #333;
+            }
+        }
+        .leftPanelCont{
+            background: #000;
+        }
+    }
+}
+.barContAllActive {
+	left: 20%;
+}
+

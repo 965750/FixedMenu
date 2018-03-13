@@ -1,0 +1,98 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif; }
+
+.barContAll {
+  width: 150px;
+  height: 250px;
+  position: fixed;
+  top: 10%;
+  left: 0px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .barContAll .singleBtnCont {
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute; }
+    .barContAll .singleBtnCont .leftPanelCont {
+      width: 20%;
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      left: -20%;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+    .barContAll .singleBtnCont .leftPanelActive {
+      left: 0%; }
+    .barContAll .singleBtnCont .barContLeft {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 54px;
+      -webkit-transition: all .1s;
+      -o-transition: all .1s;
+      transition: all .1s; }
+      .barContAll .singleBtnCont .barContLeft .iconFA {
+        color: white;
+        font-size: 20px; }
+      .barContAll .singleBtnCont .barContLeft:hover {
+        cursor: pointer; }
+      .barContAll .singleBtnCont .barContLeft .ys {
+        padding-right: 3px; }
+    .barContAll .singleBtnCont .barContRight {
+      background: #4c4c4c;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px; }
+      .barContAll .singleBtnCont .barContRight span {
+        color: #fff;
+        font-size: 14px; }
+  .barContAll .menu {
+    top: 0px; }
+    .barContAll .menu .barContLeft {
+      background: #1fa67a; }
+      .barContAll .menu .barContLeft:hover {
+        background: #23bb8a; }
+    .barContAll .menu .leftPanelCont {
+      background: #1fa67a; }
+  .barContAll .fav {
+    top: 50px; }
+    .barContAll .fav .barContLeft {
+      background: #c02b74; }
+      .barContAll .fav .barContLeft:hover {
+        background: #d13381; }
+    .barContAll .fav .leftPanelCont {
+      background: #c02b74; }
+  .barContAll .subs {
+    top: 100px; }
+    .barContAll .subs .barContLeft {
+      background: #2bb1c0; }
+      .barContAll .subs .barContLeft:hover {
+        background: #33c1d1; }
+    .barContAll .subs .leftPanelCont {
+      background: #2bb1c0; }
+  .barContAll .insta {
+    top: 150px; }
+    .barContAll .insta .barContLeft {
+      background: #c4bf0d; }
+      .barContAll .insta .barContLeft:hover {
+        background: #dcd60f; }
+    .barContAll .insta .leftPanelCont {
+      background: #c4bf0d; }
+  .barContAll .vid {
+    top: 200px; }
+    .barContAll .vid .barContLeft {
+      background: #000; }
+      .barContAll .vid .barContLeft:hover {
+        background: #333; }
+    .barContAll .vid .leftPanelCont {
+      background: #000; }
+
+.barContAllActive {
+  left: 20%; }
