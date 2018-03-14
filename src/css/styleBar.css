@@ -3,6 +3,14 @@ body {
   padding: 0px;
   font-family: sans-serif; }
 
+.template {
+  background: #77891B;
+  height: 100px;
+  width: 150px;
+  float: right; }
+  .template span {
+    font-size: 27px; }
+
 .barContAll {
   width: 150px;
   height: 250px;
@@ -17,7 +25,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute; }
+    position: absolute;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
     .barContAll .singleBtnCont .leftPanelCont {
       width: 20%;
       height: 100vh;
@@ -56,43 +67,53 @@ body {
   .barContAll .menu {
     top: 0px; }
     .barContAll .menu .barContLeft {
-      background: #1fa67a; }
+      background: #77891B; }
       .barContAll .menu .barContLeft:hover {
-        background: #23bb8a; }
+        background: #8a9e1f; }
     .barContAll .menu .leftPanelCont {
-      background: #1fa67a; }
+      background: #77891B;
+      -webkit-box-shadow: inset -5px 0px 8px #5d6b15;
+              box-shadow: inset -5px 0px 8px #5d6b15; }
   .barContAll .fav {
     top: 50px; }
     .barContAll .fav .barContLeft {
-      background: #c02b74; }
+      background: #D54A2D; }
       .barContAll .fav .barContLeft:hover {
-        background: #d13381; }
+        background: #d95c42; }
     .barContAll .fav .leftPanelCont {
-      background: #c02b74; }
+      background: #D54A2D;
+      -webkit-box-shadow: inset -5px 0px 8px #b93f25;
+              box-shadow: inset -5px 0px 8px #b93f25; }
   .barContAll .subs {
     top: 100px; }
     .barContAll .subs .barContLeft {
-      background: #2bb1c0; }
+      background: #49B1BC; }
       .barContAll .subs .barContLeft:hover {
-        background: #33c1d1; }
+        background: #5cb9c3; }
     .barContAll .subs .leftPanelCont {
-      background: #2bb1c0; }
+      background: #49B1BC;
+      -webkit-box-shadow: inset -5px 0px 8px #3d9ba5;
+              box-shadow: inset -5px 0px 8px #3d9ba5; }
   .barContAll .insta {
     top: 150px; }
     .barContAll .insta .barContLeft {
-      background: #c4bf0d; }
+      background: #ccc61e; }
       .barContAll .insta .barContLeft:hover {
-        background: #dcd60f; }
+        background: #dfd825; }
     .barContAll .insta .leftPanelCont {
-      background: #c4bf0d; }
+      background: #ccc61e;
+      -webkit-box-shadow: inset -5px 0px 8px #ada819;
+              box-shadow: inset -5px 0px 8px #ada819; }
   .barContAll .vid {
     top: 200px; }
     .barContAll .vid .barContLeft {
-      background: #000; }
+      background: #B22F34; }
       .barContAll .vid .barContLeft:hover {
-        background: #333; }
+        background: #c6343a; }
     .barContAll .vid .leftPanelCont {
-      background: #000; }
+      background: #B22F34;
+      -webkit-box-shadow: inset -5px 0px 8px #96282c;
+              box-shadow: inset -5px 0px 8px #96282c; }
 
 .barContAllActive {
   left: 20%; }

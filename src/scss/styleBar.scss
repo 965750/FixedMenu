@@ -1,7 +1,24 @@
+$col1: #77891B;
+$col2: #D54A2D;
+$col3: #49B1BC;
+$col4: #ccc61e;
+$col5: #B22F34;
+$col6: #DA5084;
+$col7: #E9A35B;
+
 body {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+}
+.template{
+    background: $col1;
+    height: 100px;
+    width: 150px;
+    float: right;
+    span{
+        font-size: 27px;
+    }
 }
 
 .barContAll {
@@ -15,6 +32,7 @@ body {
         width: 150px;
         display: flex;
         position: absolute;
+        transition: all .2s;
         .leftPanelCont{
             width: 20%;
             height: 100vh;
@@ -58,65 +76,73 @@ body {
     .menu {
         top: 0px;
         .barContLeft {
-            background: #1fa67a;
+            background: $col1;
             &:hover {
-                background: lighten(#1fa67a, 5%);
+                background: lighten($col1, 5%);
             }
         }
         .leftPanelCont{
-            background: #1fa67a;
+            background: $col1;
+            box-shadow: inset -5px 0px 8px darken($col1, 7%);
         }
     }
     .fav {
         top: 50px;
         .barContLeft {
-            background: #c02b74;
+            background: $col2;
             &:hover {
-                background: lighten(#c02b74, 5%);
+                background: lighten($col2, 5%);
             }
         }
         .leftPanelCont{
-            background: #c02b74;
+            background: $col2;
+            box-shadow: inset -5px 0px 8px darken($col2, 7%);
         }
     }
     .subs {
         top: 100px;
         .barContLeft {
-            background: #2bb1c0;
+            background: $col3;
             &:hover {
-                background: lighten(#2bb1c0, 5%);
+                background: lighten($col3, 5%);
             }
         }
         .leftPanelCont{
-            background: #2bb1c0;
+            background: $col3;
+            box-shadow: inset -5px 0px 8px darken($col3, 7%);
         }
     }
     .insta {
         top: 150px;
         .barContLeft {
-            background: #c4bf0d;
+            background: $col4;
             &:hover {
-                background: lighten(#c4bf0d, 5%);
+                background: lighten($col4, 5%);
             }
         }
         .leftPanelCont{
-            background: #c4bf0d;
+            background: $col4;
+            box-shadow: inset -5px 0px 8px darken($col4, 7%);
         }
     }
     .vid {
         top: 200px;
         .barContLeft {
-            background: #000;
+            background: $col5;
             &:hover {
-                background: #333;
+                background: lighten($col5, 5%);
             }
         }
         .leftPanelCont{
-            background: #000;
+            background: $col5;
+            box-shadow: inset -5px 0px 8px darken($col5, 7%);
         }
     }
 }
 .barContAllActive {
 	left: 20%;
+}
+@mixin singleBtn($cols){
+        
 }
 
